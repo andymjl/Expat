@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>42A8EDEF-D16A-4862-8C40-AF9E10E67800</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Expat</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2BD97121277E4B1FECDF70ECEA31BEF5DD0AAACE</key>
+		<string>https://github.com/andymjl/Expat.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Expat.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2BD97121277E4B1FECDF70ECEA31BEF5DD0AAACE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/andymjl/Expat.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2BD97121277E4B1FECDF70ECEA31BEF5DD0AAACE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2BD97121277E4B1FECDF70ECEA31BEF5DD0AAACE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Expat</string>
+		</dict>
+	</array>
+</dict>
+</plist>
