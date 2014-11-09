@@ -14,6 +14,8 @@
 		495A1FF01A0FCC5B00B0FB25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495A1FEF1A0FCC5B00B0FB25 /* Images.xcassets */; };
 		495A1FF31A0FCC5B00B0FB25 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 495A1FF11A0FCC5B00B0FB25 /* LaunchScreen.xib */; };
 		495A1FFF1A0FCC5B00B0FB25 /* ExpatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 495A1FFE1A0FCC5B00B0FB25 /* ExpatTests.m */; };
+		495A211F1A0FCC8700B0FB25 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495A20091A0FCC8600B0FB25 /* Bolts.framework */; };
+		495A21201A0FCC8700B0FB25 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 495A200A1A0FCC8600B0FB25 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		495A1FF81A0FCC5B00B0FB25 /* ExpatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		495A1FFD1A0FCC5B00B0FB25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		495A1FFE1A0FCC5B00B0FB25 /* ExpatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpatTests.m; sourceTree = "<group>"; };
+		495A20091A0FCC8600B0FB25 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		495A200A1A0FCC8600B0FB25 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495A211F1A0FCC8700B0FB25 /* Bolts.framework in Frameworks */,
+				495A21201A0FCC8700B0FB25 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,7 @@
 				495A1FE11A0FCC5B00B0FB25 /* Expat */,
 				495A1FFB1A0FCC5B00B0FB25 /* ExpatTests */,
 				495A1FE01A0FCC5B00B0FB25 /* Products */,
+				495A21DE1A0FCCC600B0FB25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +124,23 @@
 				495A1FFD1A0FCC5B00B0FB25 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		495A20081A0FCC8600B0FB25 /* FacebookSDK */ = {
+			isa = PBXGroup;
+			children = (
+				495A20091A0FCC8600B0FB25 /* Bolts.framework */,
+				495A200A1A0FCC8600B0FB25 /* FacebookSDK.framework */,
+			);
+			path = FacebookSDK;
+			sourceTree = "<group>";
+		};
+		495A21DE1A0FCCC600B0FB25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				495A20081A0FCC8600B0FB25 /* FacebookSDK */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +206,7 @@
 			knownRegions = (
 				en,
 				Base,
+				he,
 			);
 			mainGroup = 495A1FD61A0FCC5B00B0FB25;
 			productRefGroup = 495A1FE01A0FCC5B00B0FB25 /* Products */;
@@ -343,7 +368,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDK",
+					"$(PROJECT_DIR)/FacebookSDK/FBAudienceNetwork",
+				);
 				INFOPLIST_FILE = Expat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +384,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FacebookSDK",
+					"$(PROJECT_DIR)/FacebookSDK/FBAudienceNetwork",
+				);
 				INFOPLIST_FILE = Expat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +449,7 @@
 				495A20041A0FCC5B00B0FB25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		495A20051A0FCC5B00B0FB25 /* Build configuration list for PBXNativeTarget "ExpatTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +458,7 @@
 				495A20071A0FCC5B00B0FB25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
